@@ -5,5 +5,5 @@ import py_scripts.sql_transform
 # Скачиваем данные по api и загружаем в postgresql
 py_scripts.from_arsagera_api_to_postgresql.to_postgresql()
 
-
+# Объединяем данные фондов в единую таблицу arsagera_funds
 py_scripts.sql_transform.sql_transform()

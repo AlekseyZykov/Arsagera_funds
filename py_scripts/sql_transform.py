@@ -31,4 +31,6 @@ def sql_transform():
                    union all
                    select date, nav_per_share, total_net_assets, 4
                    from stg_fo""")
+    cursor.execute(
+        """Drop table if exists stg_fa, stg_f4si, stg_f64, stg_fo""")
     connection.commit()
